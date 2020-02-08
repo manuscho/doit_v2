@@ -35,15 +35,3 @@
   font-size: 20px;
 }
 
-.banner-bottom {
-  position: fixed;
-  bottom: -5px;
-  background-image: url("../../images/picture2.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 200px;
-  width: 100%;
-  transition: 0.3s ease;
-  clip-path: polygon(76% 60%, 83% 76%, 100% 76%, 100% 100%, 0 100%, 0 76%, 53% 76%);
-}
-

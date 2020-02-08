@@ -4,17 +4,18 @@
 /* Fontawesome */
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
+/*Bootstrap*/
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
+
 /* Importing all components file */
 @import url("components/button.css");
 @import url("components/card.css");
 @import url("components/banner.css");
-@import url("components/footer.css");
-@import url("components/header.css");
 @import url("components/avatar.css");
+@import url("pages/dashboard.css");
 
 /* Utilities */
 html, body {
-  margin: 0;
   font-family: Open Sans;
   background-color: #fafcff;
   height: 100%;
@@ -22,30 +23,47 @@ html, body {
 
 h1, h2, h3, h4, h5 {
   font-family: Poppins;
-  padding: 0px;
-  margin: 0px;
-  line-height: 90%
 }
 
 p {
   font-size: 14px;
-  padding: 0px;
-  margin: 0px;
-}
-
-h3 {
-  font-size: 16px;
 }
 
 a {
   text-decoration: none;
 }
 
-/* Custom design below! */
-
-.main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0px 4px 0px 4px;
+a:hover {
+  text-decoration: none;
 }
 
+/* Custom design below! */
+
+.logo-font {
+  text-shadow: 0px 0px 5px #000000;
+  color: white !important;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 900;
+}
+
+.footer-background {
+  position: fixed;
+  bottom: 35px;
+  background-image: url("../../images/picture2.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  width: 100%;
+  clip-path: polygon(76% 60%, 83% 76%, 100% 76%, 100% 100%, 0 100%, 0 76%, 53% 76%);
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Task List</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <!-- We need this line below for responsiveness! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand logo-font" href="#">Planero</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account.html">My account</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="dashboard" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Checklists
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="dashboard.html">Your Dashboard</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="content.html">Vietnam 2020</a>
+                <a class="dropdown-item" href="content.html">USA 2020</a>
+                <a class="dropdown-item" href="content.html">Italy 2021</a>
+                <a class="dropdown-item" href="content.html">Germany 2021</a>
+                <a class="dropdown-item" href="content.html">China 2022</a>
+                <a class="dropdown-item" href="content.html">Australia 2022</a>
+                <a class="dropdown-item" href="content.html">South Africa 2022</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="banner-top">
+      <div class="container">
+        <h2>Your Dashboard</h2>
+        <p>Checklists & tasks</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+    <a href="content.html"><img src="images/manuscho.jpg" class="avatar"></a>
+
+    <h2>Your checklists</h2>
+
+    <div class="main-container">
+
+      <div class="checklist-overview">
+
+        <a href="content">
+          <div class="card-checklist logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/country/vietnam-min.jpg)">
+            <h3 class="mb-0">Vietnam</h3>
+            <p class="mt-0">2020</p>
+          </div>
+        </a>
+
+        <a href="content.html">
+          <div class="card-checklist logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/country/usa-min.jpg)">
+            <h3 class="mb-0">USA</h3>
+            <p class="mt-0">2020</p>
+          </div>
+        </a>
+
+        <a href="content.html">
+          <div class="card-checklist logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/country/italy-min.jpg)">
+            <h3 class="mb-0">Italy</h3>
+            <p class="mt-0">2021</p>
+          </div>
+        </a>
+
+        <a href="content.html">
+          <div class="card-checklist logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/country/germany-min.jpg)">
+            <h3 class="mb-0">Germany</h3>
+            <p class="mt-0">2021</p>
+          </div>
+        </a>
+
+        <a href="content.html">
+          <div class="card-checklist logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/country/china-min.jpg)">
+            <h3 class="mb-0">China</h3>
+            <p class="mt-0">2021</p>
+          </div>
+        </a>
+
+        <a href="content.html">
+          <div class="card-checklist logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/country/australia-min.jpg)">
+            <h3 class="mb-0">Australia</h3>
+            <p class="mt-0">2022</p>
+          </div>
+        </a>
+
+        <a href="content.html">
+          <div class="card-checklist logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/country/southafrica-min.jpg)">
+            <h3 class="mb-0">South Africa</h3>
+            <p class="mt-0">2022</p>
+          </div>
+        </a>
+
+        <a href="new.html">
+          <div class="card-checklist" style="background-color: #1b262c">
+          <h3 class="display-1">+</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <br>
+    <h2> Your tasks</h2>
+
+        <div class="card-task">
+          <div class="card-task-status">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="card-task-main">
+            <div class="card-task-picture" style="background-image: url(https://source.unsplash.com/random)">
+              <h3>Jan 18<h3>
+            </div>
+            <div class="card-task-content">
+              <h3> Apply for your visa </h3>
+              <p> For your travel destination, every foreign national is required to apply for a tourist visum.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-task">
+          <div class="card-task-status">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="card-task-main">
+            <div class="card-task-picture" style="background-image: url(https://source.unsplash.com/random)">
+              <h3>Jan 18<h3>
+            </div>
+            <div class="card-task-content">
+              <h3> Apply for your visa </h3>
+              <p> For your travel destination, every foreign national is required to apply for a tourist visum.</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <footer class="page-footer font-small blue fixed-bottom bg-white">
+      <div class="footer-copyright text-center py-2">© 2020 Copyright:
+      <a href="#"> Planero</a>
+      </div>
+    </footer>
+
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>

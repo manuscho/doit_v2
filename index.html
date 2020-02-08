@@ -1,50 +1,104 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>My Task List</title>
-  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
-  <!-- We need this line below for responsiveness! -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Planero</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<body>
-  <div class="header">
-    <div class="container">
-      <p> Doit </p>
-    </div>
-    <div class="container">
-      <a href="content.html"><img src="images/manuscho.jpg" class="avatar"></a>
-    </div>
-  </div>
+  <body>
 
-  <div class="banner-top-large">
-    <div class="container">
-      <h4>Welcome to Doit</h4>
-      <h5>For a more organized life</h5>
-      <br>
-      <a href="/" class="btn-white">Coming 2020</a>
-    </div>
-  </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand logo-font" href="#">Planero</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="main">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account.html">My account</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="dashboard" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Checklists
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="dashboard.html">Your Dashboard</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="content.html">Vietnam 2020</a>
+                <a class="dropdown-item" href="content.html">USA 2020</a>
+                <a class="dropdown-item" href="content.html">Italy 2021</a>
+                <a class="dropdown-item" href="content.html">Germany 2021</a>
+                <a class="dropdown-item" href="content.html">China 2022</a>
+                <a class="dropdown-item" href="content.html">Australia 2022</a>
+                <a class="dropdown-item" href="content.html">South Africa 2022</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
 
-  </div>
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
 
-  <div class="banner-bottom">
-  </div>
+          <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+            <div class="carousel-caption d-md-block ">
+              <h2 class="display-4 logo-font mb-0">Planero</h2>
+              <p class="lead logo-font mt-0">Prepared for everything</p>
+            </div>
+          </div>
 
-  <div class="footer">
-    <div class="container">
-      <p> Doit - 2020 </p>
-      <a href="impressum"><p>Impressum</p></a>
-    </div>
-  </div>
+          <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+            <div class="carousel-caption d-md-block">
+              <h2 class="display-4 logo-font mb-0">Planero</h2>
+              <p class="lead logo-font mt-0">Prepared for everything</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+            <div class="carousel-caption d-md-block">
+              <h2 class="display-4 logo-font mb-0">Planero</h2>
+              <p class="lead logo-font mt-0">Prepared for everything</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </header>
 
 
-</body>
+    <footer class="page-footer font-small blue fixed-bottom bg-white">
+      <div class="footer-copyright text-center py-2">© 2020 Copyright:
+      <a href="#"> Planero</a>
+      </div>
+    </footer>
 
-
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
 
 </html>

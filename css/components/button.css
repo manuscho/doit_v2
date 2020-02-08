@@ -1,7 +1,9 @@
 .btn-blue {
   background-color: #1b262c;
   color: white;
-  height: 24px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
   padding: 4px 8px;
   margin: 4px 0px 4px 4px;
   border-radius: 4px;
@@ -13,18 +15,20 @@
   box-shadow: 0px 0px 10px grey;
 }
 
-.btn-white {
+.btn-brand {
   background-color: white;
   color: #1b262c;
-  height: 24px;
   padding: 4px 8px;
   margin: 4px 0px 4px 0px;
   border-radius: 4px;
   font-weight: bold;
   transition: 0.3s ease;
   box-shadow: 0px 0px 5px grey;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.btn-white:hover {
+.btn-brand:hover {
   box-shadow: 0px 0px 10px grey;
 }
