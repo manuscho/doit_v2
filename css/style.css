@@ -14,6 +14,7 @@
 @import url("components/avatar.css");
 @import url("pages/dashboard.css");
 @import url("pages/content.css");
+@import url("pages/index.css");
 
 /* Utilities */
 html, body {
