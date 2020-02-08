@@ -1,15 +1,19 @@
 .banner-top {
-  background-image: url("../../images/picture2.jpg");
   background-position: center;
   background-size: cover;
   height: 200px;
   width: 100%;
-  clip-path: polygon(76% 60%, 83% 76%, 100% 76%, 100% 0, 0 0, 0 76%, 53% 76%);
+  margin-bottom: 16px;
+}
+
+.banner-top h2 {
+  margin-top: 8px;
+  padding: 0;
+  line-height: 80%;
 }
 
 .banner-top .container {
   padding-top: 70px;
-  padding-left: 10px;
   color: white;
 }
 

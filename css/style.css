@@ -13,6 +13,7 @@
 @import url("components/banner.css");
 @import url("components/avatar.css");
 @import url("pages/dashboard.css");
+@import url("pages/content.css");
 
 /* Utilities */
 html, body {
@@ -21,12 +22,13 @@ html, body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Poppins;
 }
 
 p {
   font-size: 14px;
+  line-height: 100%;
 }
 
 a {

@@ -11,7 +11,7 @@
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+    <nav class="border-bottom navbar fixed-top navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand logo-font" href="#">Planero</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,6 +25,7 @@
             <li class="nav-item">
               <a class="nav-link" href="account.html">My account</a>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="dashboard" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 My Checklists
@@ -41,24 +42,34 @@
                 <a class="dropdown-item" href="content.html">South Africa 2022</a>
               </div>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="dashboard" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="privacy.html">Privacy</a>
+                <a class="dropdown-item" href="team.html">Team</a>
+                <a class="dropdown-item" href="imprint.html">Imprint</a>
+              </div>
+            </li>
           </ul>
         </div>
     </nav>
 
-    <div class="banner-top">
+    <div class="banner-top" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(../../images/picture2.jpg)">
       <div class="container">
-        <h2>Your Dashboard</h2>
-        <p>Checklists & tasks</p>
+        <div class="avatar-box">
+          <a href="account.html"><img src="images/user.jpg" class="avatar"></a>
+        </div>
+        <h2>My Dashboard</h2>
+        <p>Checklist & Tasks</p>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container pb-5">
 
-    <a href="content.html"><img src="images/manuscho.jpg" class="avatar"></a>
-
-    <h2>Your checklists</h2>
-
-    <div class="main-container">
+    <h2>My checklists</h2>
 
       <div class="checklist-overview">
 
@@ -118,44 +129,58 @@
         </a>
 
       </div>
+
+      <div class="border-bottom my-3 py-2"></div>
+
+      <h2> My tasks</h2>
+
+      <div class="card-task">
+        <div class="card-task-picture logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/item/passport.png)">
+          <h5>Apr 20<h5>
+        </div>
+        <div class="card-task-content">
+          <h5 class="my-0">Visa</h5>
+          <p class="my-0">For your travel destination, every foreign national is required to apply for a tourist visum.</p>
+        </div>
+        <div class="card-task-status done"></div>
+      </div>
+
+      <div class="card-task">
+        <div class="card-task-picture logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/item/backpack-min.jpg)">
+          <h5>May 20<h5>
+        </div>
+        <div class="card-task-content">
+          <h5 class="my-0">Packing list</h5>
+          <p class="my-0">Click on the info icon to see a great packing list for your trip</p>
+        </div>
+        <div class="card-task-status delayed"></div>
+      </div>
+
+      <div class="card-task">
+        <div class="card-task-picture logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/item/contract-min.jpg)">
+          <h5>Feb 18<h5>
+        </div>
+        <div class="card-task-content">
+          <h5 class="my-0">Travel Insurance</h5>
+          <p class="my-0">For trips above 8 weeks, you are most likely required to get a specific travel insurance. Click here for more info</p>
+        </div>
+        <div class="card-task-status done"></div>
+      </div>
+
+      <div class="card-task">
+        <div class="card-task-picture logo-font" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(images/item/travel-min.jpg)">
+          <h5>Jan 18<h5>
+        </div>
+        <div class="card-task-content">
+          <h5 class="my-0">Final preparation</h5>
+          <p class="my-0">Make sure you have your passport and credit cards. Close all windows and switch off the oven. Happy travels!</p>
+        </div>
+        <div class="card-task-status done"></div>
+      </div>
+
     </div>
 
-    <br>
-    <h2> Your tasks</h2>
-
-        <div class="card-task">
-          <div class="card-task-status">
-            <i class="fas fa-check-circle"></i>
-          </div>
-          <div class="card-task-main">
-            <div class="card-task-picture" style="background-image: url(https://source.unsplash.com/random)">
-              <h3>Jan 18<h3>
-            </div>
-            <div class="card-task-content">
-              <h3> Apply for your visa </h3>
-              <p> For your travel destination, every foreign national is required to apply for a tourist visum.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-task">
-          <div class="card-task-status">
-            <i class="fas fa-check-circle"></i>
-          </div>
-          <div class="card-task-main">
-            <div class="card-task-picture" style="background-image: url(https://source.unsplash.com/random)">
-              <h3>Jan 18<h3>
-            </div>
-            <div class="card-task-content">
-              <h3> Apply for your visa </h3>
-              <p> For your travel destination, every foreign national is required to apply for a tourist visum.</p>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
-    <footer class="page-footer font-small blue fixed-bottom bg-white">
+    <footer class="border-top page-footer font-small blue fixed-bottom bg-white">
       <div class="footer-copyright text-center py-2">© 2020 Copyright:
       <a href="#"> Planero</a>
       </div>

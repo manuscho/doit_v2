@@ -4,18 +4,23 @@
   border-radius: 4px;
   box-shadow: 0px 0px 5px grey;
   transition: 0.3s ease;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.grey-out {
+  opacity: 0.3;
 }
 
 .card-task:hover {
   box-shadow: 0px 0px 10px grey;
 }
 
-.card-task-main {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-  margin-top: 10px;
+.card-task:hover .card-action {
+  opacity: 1;
 }
 
 .card-task-picture {
@@ -24,23 +29,38 @@
   justify-content: space-evenly;
   background-position: center;
   background-size: cover;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 4px 0px 0px 4px;
   color: white;
 }
 
 .card-task-content {
-  width: calc( 100% - 100px );
-  padding: 10px;
+  width: calc( 100% - 90px );
+  padding: 4px 8px 8px 4px;
 }
 
 .card-task-status {
+  width: 10px;
+  padding: 4px;
+  background-color: grey;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.card-action {
   position: absolute;
-  top: -13px;
-  right: 10px;
-  font-size: 20px;
-  color: grey;
+  bottom: 5px;
+  right: 15px;
+  opacity: 0;
+}
+
+.done {
+  background-color: #6F7D6A;
+}
+
+.alert {
+  background-color: #B50103;
 }
 
 .card-avatar {
@@ -51,14 +71,38 @@
   width: 50px;
 }
 
-.card-action {
+/*SMALL ITEM BOX*/
+
+.card-item {
+  background-color: white;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px grey;
+  transition: 0.3s ease;
   display: flex;
-  justify-content: flex-end;
   width: 100%;
-  margin-top: 5px;
+  height: 30px;
+  overflow: hidden;
 }
 
-/*QUESTiON BOX*/
+.card-item:hover {
+  box-shadow: 0px 0px 10px grey;
+}
+
+.card-item-content {
+  width: calc( 100% - 10px );
+  padding: 8px;
+}
+
+.card-item-status {
+  width: 10px;
+  padding: 4px;
+  background-color: grey;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+}
+
+/*CHECKLIST BOX*/
 
 .card-checklist {
   box-shadow: 0px 0px 5px grey;
@@ -71,6 +115,7 @@
   min-width: 150px;
   background-position: 50% 50%;
   background-size: cover;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,0 +1,24 @@
+.item-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  flex-grow: 1;
+}
+
+@media (max-width: 1000px) {
+  .item-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .item-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cluster-box {
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #fafcff;
+}

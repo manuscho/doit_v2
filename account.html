@@ -11,7 +11,7 @@
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+    <nav class="border-bottom navbar fixed-top navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand logo-font" href="#">Planero</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,6 +25,7 @@
             <li class="nav-item">
               <a class="nav-link" href="account.html">My account</a>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="dashboard" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 My Checklists
@@ -41,33 +42,46 @@
                 <a class="dropdown-item" href="content.html">South Africa 2022</a>
               </div>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="dashboard" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="privacy.html">Privacy</a>
+                <a class="dropdown-item" href="team.html">Team</a>
+                <a class="dropdown-item" href="imprint.html">Imprint</a>
+              </div>
+            </li>
           </ul>
         </div>
     </nav>
 
-    <div class="banner-top">
+    <div class="banner-top" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(../../images/picture2.jpg)">
       <div class="container">
-        <h2>Alex</h2>
-        <p>Your Account</p>
+        <div class="avatar-box">
+          <a href="account.html"><img src="images/user.jpg" class="avatar"></a>
+        </div>
+        <h2>My Account</h2>
+        <p>Alex</p>
       </div>
+
     </div>
 
-    <div class="container">
-
-      <a href="content.html"><img src="images/manuscho.jpg" class="avatar"></a>
+    <div class="container pb-5">
 
       <h2>Your Account Information</h2>
       <br>
       <h5>Your username: alexschm</h5>
       <h5>Your email: alexschm@live.de</h5>
 
-      <a href="" class="btn btn-brand">Edit profile</a>
+      <a href="" class="btn btn-brand white">Edit profile</a>
 
-      <button type="button" class="btn btn-brand" data-toggle="modal" data-target="#vault-modal">
+      <button type="button" class="btn btn-brand white" data-toggle="modal" data-target="#vault-modal">
         View vault
       </button>
 
-      <a href="" class="btn btn-warning">Delete account</a>
+      <a href="" class="btn btn-brand-red">Delete account</a>
 
     </div>
 
@@ -86,16 +100,15 @@
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-secondary">Edit vault</button>
-            <button type="button" class="btn btn-warning">Delete vault</button>
+            <button type="button" class="btn btn-brand">Edit vault</button>
+            <button type="button" class="btn btn-brand-red">Delete vault</button>
           </div>
         </div>
       </div>
     </div>
 
 
-    <footer class="page-footer font-small blue fixed-bottom bg-white">
+    <footer class="border-top page-footer font-small blue fixed-bottom bg-white">
       <div class="footer-copyright text-center py-2">© 2020 Copyright:
       <a href="#"> Planero</a>
       </div>
