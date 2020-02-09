@@ -9,7 +9,7 @@
 
 /* Importing all components file */
 @import url("components/button.css");
-@import url("components/card.css");
+@import url("components/card_alternative.css");
 @import url("components/banner.css");
 @import url("components/avatar.css");
 @import url("pages/dashboard.css");
@@ -55,17 +55,6 @@ a:hover {
   font-weight: 900;
 }
 
-.footer-background {
-  position: fixed;
-  bottom: 35px;
-  background-image: url("../../images/picture2.jpg");
-  background-position: center;
-  background-size: cover;
-  min-height: 300px;
-  width: 100%;
-  clip-path: polygon(76% 60%, 83% 76%, 100% 76%, 100% 100%, 0 100%, 0 76%, 53% 76%);
-}
-
 .carousel-item {
   height: 100vh;
   min-height: 350px;
@@ -77,15 +66,5 @@ a:hover {
 }
 
 .navbar {
-  transition: 0.3s ease;
+  background-color: #1b262c;
 }
-
-@media (max-width: 576px) {
-  .navbar {
-    background-color: #1b262c;
-  }
-}
-
-  .navbar:hover {
-    background-color: #1b262c;
-  }

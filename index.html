@@ -65,19 +65,19 @@
         </ol>
         <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+          <div class="carousel-item active" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
             <div class="carousel-caption d-md-block mb-4">
               <p class="lead logo-font mt-0">100% automated and individualized</p>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+          <div class="carousel-item" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
             <div class="carousel-caption d-md-block mb-4">
               <p class="lead logo-font mt-0">We take privacy seriosly. Read more here.</p>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+          <div class="carousel-item" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
             <div class="carousel-caption d-md-block mb-4">
               <p class="lead logo-font mt-0">Free to use. Read more here.</p>
             </div>
@@ -94,7 +94,6 @@
 
         <h6 class="my-0 mr-1">Choose your activity:</h6>
 
-
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle px-4 logo-font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Activity
@@ -105,10 +104,48 @@
                 <a class="dropdown-item" href="#">rennovate</a>
               </div>
             </div>
+        </div>
 
+        <button class="logo-font btn-invisible" data-toggle="modal" data-target="#login-modal">or log into your existing account</button>
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <!-- <label for="exampleInputEmail1">Email address</label> -->
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <!-- <label for="exampleInputPassword1">Password</label> -->
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <small id="Help" class="form-text text-muted">We take your privacy seriously and will not share your data with anybody. Read more about it <a href="/new_account">here</a>. Create a new account <a href="/new_account">here</a>.</small>
+            </div>
+            <button type="submit" class="btn btn-brand">Login</button>
+          </form>
+
+          </div>
+
+<!--           <div class="modal-footer">
+            <button type="button" class="btn btn-brand-red">Delete all</button>
+          </div> -->
         </div>
       </div>
     </div>
+
+
 
     <footer class="page-footer font-small blue fixed-bottom">
       <div class="footer-copyright text-center py-2">© 2020 Copyright:
