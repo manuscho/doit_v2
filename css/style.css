@@ -34,6 +34,10 @@ p {
 
 a {
   text-decoration: none;
+  color: #212529;
+}
+
+.navbar a {
   font-family: Poppins;
 }
 
@@ -71,3 +75,17 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.navbar {
+  transition: 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    background-color: #1b262c;
+  }
+}
+
+  .navbar:hover {
+    background-color: #1b262c;
+  }
