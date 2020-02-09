@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Task List</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+    <!-- We need this line below for responsiveness! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="travelbackground">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+          <a class="logo-font mr-2" href=""><h2 class="m-0 p-0">Planero</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="account.html">My account</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="dashboard" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  My Checklists
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="dashboard.html">Your Dashboard</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="content.html">Vietnam 2020</a>
+                  <a class="dropdown-item" href="content.html">USA 2020</a>
+                  <a class="dropdown-item" href="content.html">Italy 2021</a>
+                  <a class="dropdown-item" href="content.html">Germany 2021</a>
+                  <a class="dropdown-item" href="content.html">China 2022</a>
+                  <a class="dropdown-item" href="content.html">Australia 2022</a>
+                  <a class="dropdown-item" href="content.html">South Africa 2022</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="dashboard" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="privacy.html">Privacy</a>
+                  <a class="dropdown-item" href="team.html">Team</a>
+                  <a class="dropdown-item" href="imprint.html">Imprint</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+    </nav>
+
+    <div class="container py-5">
+
+
+
+
+<div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar" class="p-0">
+                <li class="active">Trip</li>
+                <li>You</li>
+                <li>Other</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+              <div class="form-group">
+                <h2 class="fs-title">Travel details</h2>
+                <h3 class="fs-subtitle">Tell us something about your trip</h3>
+                <input class="form-control my-1" type="text" name="fname" placeholder="First Name"/>
+                <input class="form-control my-1" type="text" name="lname" placeholder="Last Name"/>
+              </div>
+                <input type="button" class="btn btn-brand" name="next" class="next action-button" value="Next"/>
+
+
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Personal details</h2>
+                <h3 class="fs-subtitle">Tell us something about you</h3>
+                <input class="form-control my-1" type="text" name="twitter" placeholder="Twitter"/>
+
+                <input class="form-control my-1" type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Further information</h2>
+                <h3 class="fs-subtitle">Just a few more final questions</h3>
+                <input class="form-control my-1" type="text" name="email" placeholder="Email"/>
+                <input class="form-control my-1" type="password" name="pass" placeholder="Password"/>
+
+                <input class="form-control" type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer class="page-footer font-small blue fixed-bottom">
+      <div class="footer-copyright text-center py-2">© 2020 Copyright:
+      <a href="#">Planero</a>
+      </div>
+    </footer>
+
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
